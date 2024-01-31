@@ -1,0 +1,176 @@
+::-moz-selection {
+    color: white;
+    background: blue;
+}
+  
+::selection {
+    color: white;
+    background: blue;
+}
+
+a:visited { 
+    color: #CCFF33;
+}
+
+body{
+
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: black;
+    background: url(/static.webp) repeat;;
+    margin: 25px;
+
+}
+
+h1{
+
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 35px;
+    color: #CCFF33;
+    text-shadow: 0 0 10px rgba(350, 350, 350, .9);
+    padding-bottom: 20px;
+
+}
+
+h2{
+
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 30px;
+    color: magenta;
+    text-decoration: underline;
+    font-weight: lighter;
+    background-color: cyan;
+
+}
+
+h3{
+
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 25px;
+    color: green;
+    text-decoration: underline;
+    font-weight: lighter;
+
+}
+
+.projects{
+
+    font-weight:bolder;
+    color: blue;
+
+}
+
+.buttons{
+
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+
+    background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: blue;
+	display: inline-block;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	width: auto;
+    vertical-align: top;
+    margin-bottom: 10px;
+	
+	&:focus,
+	&:hover {
+		background-color: #BCBCBC;
+        color: cyan;
+	}
+
+}
+
+.fishtank{
+
+    padding-bottom: 0px;
+
+}
+
+.scroller{
+
+    background-color: yellow;
+    color: black;
+    margin-bottom: 75px;
+
+}
+
+.box{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.button{
+
+	background: #7C7C7C;
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	display: inline-block;
+	font-size: 50px;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	width: auto;
+    vertical-align: top;
+	
+	&:focus,
+	&:hover {
+		background-color: #BCBCBC;
+        color: blue;
+	}
+
+}
+
+.picturegrid{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+
+}
+
+.pictures{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+
+
+
+@media (max-width: 1100px){
+    
+    .box{
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
