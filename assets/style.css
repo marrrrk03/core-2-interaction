@@ -20,6 +20,7 @@ body{
     background-color: black;
     background: url(/static.webp) repeat;;
     margin: 25px;
+    cursor: url('/fishcursor.png'), auto;
 
 }
 
