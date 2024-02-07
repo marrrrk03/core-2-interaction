@@ -1,0 +1,55 @@
+html{
+    background-color: #211c24;
+    color: rgb(32, 27, 33);
+}
+
+@font-face{
+    font-family: 'TNB_regular';
+    src: url(/assets/fonts/TimesNewBastard-BoldItalicWeb.ttf);
+}
+
+@font-face{
+    font-family: 'TNB_bold';
+    src: url(/assets/fonts/TimesNewBastard-BoldWeb.ttf);
+}
+
+@font-face{
+    font-family: 'TNB_regularitalic';
+    src: url(/assets/fonts/TimesNewBastard-ItalicWeb.ttf);
+}
+
+@font-face{
+    font-family: 'TNB_bolditalic';
+    src: url(/assets/fonts/TimesNewBastard-RegularWeb.ttf);
+}
+
+h1{
+    font-family: 'TNB_bold', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(225, 225, 0, 1);
+    font-size: 100px;
+    line-height: .5;
+    letter-spacing: -1px;
+    margin-top: 20%;
+}
+
+.big{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 115px;
+    letter-spacing: -5px;
+}
+
+.glow{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+    
+    from{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFFF00, 0 0 40px #FFFF00, 0 0 50px #FFFF00, 0 0 60px #FFFF00, 0 0 70px #FFFF00;
+    }
+    to{
+    text-shadow: 0 0 20px #fff, 0 0 30px #FFFF00, 0 0 40px #FFFF00, 0 0 50px #FFFF00, 0 0 60px #FFFF00, 0 0 70px #FFFF00, 0 0 80px #FFFF00;
+    }
+    
+}
