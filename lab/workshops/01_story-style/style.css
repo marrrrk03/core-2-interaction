@@ -1,3 +1,7 @@
+/* general styles */
+
+
+
 html{
 
     background-color: blue;
@@ -10,11 +14,91 @@ html{
 
     text-align: center;
     font-family: cursive;
+    margin-top: 50px;
 
 }
 
+h1, h2, p{
+
+    margin: 0;
+
+}
+
+body{
+
+    max-width: 600px;
+    margin: auto;
+
+}  
+
 .part{
 
-    
+    background-color: greenyellow;
+    padding: 10px;
+    border: 1px solid black;
+    border-style: groove;
+    border-width: 10px;
+    margin: 50px 0px 50px 0px;
+
+}
+
+#partOne{
+
+    background-color: green;
+    color: red;
+    font-weight: bolder;
+
+}   
+
+#partFive{
+
+    background-color: green;
+    color: red;
+    font-weight: bolder;
+
+}   
+
+img, video, audio, object{
+
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+object{
+
+    aspect-ratio: 4/3;
+
+}
+
+.nav{
+
+    position: fixed;
+    top: 2.5px;
+    left: 50%px;
+
+}
+
+.nav a{
+
+    color: pink;
+    font-weight: bolder;
+
+}
+
+.nav-list{
+
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.nav-item{
+
+    display: inline-block;
+    border-style: ridge;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: green;
 
 }
