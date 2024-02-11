@@ -1,11 +1,300 @@
+a:link{
+    color: red;
+}
+a:visited{
+    color: red;
+    background-color: transparent;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+    text-decoration: underline;
+}
+
 html{
 
-    color: pink;
-    background-color: cadetblue;
-    font-family: 'Arial Narrow', sans-serif;
-    margin-top: 0;
-    margin-left: 25%;
-    margin-right: 25%;  
+    max-width: 500px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2e2e2e;
+    background: #2e2e2e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+}
+
+nav, ol, ul, li{
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.Nav-item{
+
+    text-align: center;
+    border: inset cornflowerblue;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+
+}
+
+.Nav-item:hover{
+
+    border: inset white;
+    background: cornflowerblue;
+
+}
+
+.Nav-link{
+
+    list-style: none;
+    margin: 5px;
+
+}
+
+.Meta{
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+.Meta-tag{
+    
+    margin: 5px;
+    background: darkcyan;
+    border: darkblue;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+
+}
+
+.Meta-tag:hover{
+
+    color: cyan;
+    background: darkblue;
+    border: darkcyan;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 2.5px;
+
+}
+
+header{
+
+    margin: 0;
+    background: #c2c2c2;
     border-style: outset;
+    border-width: 10px;
+    border-color: #e5b567;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.Page-header{
+
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: none;
+
+}
+
+main{
+
+    background: #c2c2c2;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #e5b567;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+footer{
+
+    background: #c2c2c2;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #e5b567;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+h1{
+
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 35px;
+    border: #319200;
+    border-style: groove;
+    border-width: 10px;
+    background: tomato;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+h2{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: cornflowerblue;
+    border: cornflowerblue;
+    border-width: 5px;
+    border-radius: 25px;
+    border: inset yellow 3.5px ;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+h3{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: cornflowerblue;
+    border: cornflowerblue;
+    border-width: 5px;
+    border-radius: 25px;
+    border: inset yellow 3.5px ;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+h4{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: cornflowerblue;
+    border: cornflowerblue;
+    border-width: 5px;
+    border-radius: 25px;
+    border: inset yellow 3.5px ;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.Post{
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+p{
+
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: tomato;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+img{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ol{
+
+    background: #e5b567;
+    color: brown;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-family: 'Lucida Handwriting', Handwriting;
+    border: inset 7.5px saddlebrown;
+    border-radius: 15px;
+    box-shadow: #2e2e2e;
+
+}
+
+ul{
+
+    background: #e5b567;
+    color: brown;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-family: 'Lucida Handwriting', Handwriting;
+    border: inset 7.5px saddlebrown;
+    border-radius: 15px;
+    box-shadow: #2e2e2e;
+
+}
+
+.Fieldset-header{
+
+    text-align: center;
+    color: green;
+    font-family: 'Lucida Handwriting', Handwriting;
+    font-weight: bolder;
+    border: #319200;
+    border-style: groove;
+    border-width: 10px;
+    background: tomato;
+    border-radius: 10px;
+    margin: 5px;
+    color: #2e2e2e;
+
+}
+
+.StudentNav{
+
+    border: #319200;
+    border-style: groove;
+    border-width: 10px;
+    background: tomato;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+input[type="checkbox"] {
+
+    outline: 3px outset black;
+    margin: 5px;
+
+}
+
+select{
+
+    outline: 3px outset black;
+    margin: 10px;
+
+}
+
+.Calendar-weekHeader{
+
+    border-style: none;
 
 }
