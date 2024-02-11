@@ -21,7 +21,7 @@ html{
     margin-left: auto;
     margin-right: auto;
     color: #2e2e2e;
-    background-image: url('/assets/water.gif');
+    background-image: url('/media/water.gif');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
