@@ -1,192 +1,343 @@
-body, html {
-    overflow: hidden;
+.roboto-medium{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.roboto-bold{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-html, body{
-    cursor: wait;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-body{
-
-    background-image: url('../imgs/pink.jpg'); /* Specify the URL of the image */
-    background-repeat: repeat;
-    color: #2e2e2e;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 600;
-    font-size: 50px;
-    
-}
-
-.bigBox{
-
+html{
+    /* background: rgb(217, 217, 201);  */
     background: #2e2e2e;
-    max-width: 625px;
-    padding-bottom: 30px;
-    margin: auto;
-
 }
 
-header{
+a{
+    text-decoration: none;
+}
 
-    color: #d6d6d6;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 600;
-    font-size: 50px;
+a:visited{
+    color: greenyellow;
+    font-weight: bolder;
+}
+
+.buttonBox{
+    background-color: rgb(217, 217, 201);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 30px;
-    margin-top: 5%;
-    line-height: 1;
-    border: #d6d6d6;
-
-}
-
-@keyframes rainbow{
-
-    0% { color: red; }
-    16.7% { color: orange; }
-    33.3% { color: yellow; }
-    50% { color: green; }
-    66.7% { color: blue; }
-    83.3% { color: indigo; }
-    100% { color: violet; }
-
-}
-
-.rainbow{
-
-    font-family: cursive;
-    animation: rainbow 1s infinite;
-    letter-spacing: 4px;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
-
-}
-
-.sub{
-
-    color: #e5d667;
-    font-size: 25px;
-    border-radius: 30px;
+    margin: 30px;
+    padding: 20px 20px 100px 20px;
     border-style: outset;
-    border-width: 1px;
-    padding: 2px;
-
-}
-
-
-.box{
-
-    border: #cecccc;
-    background: #d6d6d6;
-    border-style: outset;
-    border-width: 10px;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 15px;
-    text-transform: lowercase;
-
-}
-
-.ready{
-
-    border: #cecccc;
-    color: #87a544;
-    background: #d6d6d6;
-    border-style: outset;
-    border-width: 10px;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 15px;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px;
+    border-width: 40px;
+    border-color: beige;
     
 }
 
-.ready a{
+.innerFrame{
 
-    color: #87a544;
-
+    background-color: rgb(217, 217, 201);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    padding: 20px 20px 100px 20px;
 }
 
-.small{
+.banner{
 
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 25px;
+    
+}
+
+.brand{
     font-style: italic;
-    color: red;
-    text-align: left;
-
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: rgb(119, 109, 90);
+    text-shadow: 0px 1px 1px rgb(119, 109, 90);
 }
 
-.begin{
+.bar{
 
-    color: #87a544;
-    text-decoration: underline;
-
-}
-
-.break{
-
-    color: #d6d6d6;
-    text-align: center;
-    background: #b05279;
-    border-style: inset;
-    border-width: 10px;
-    text-transform: uppercase;
-    
-}
-
-.break:hover{
-
-    color: #b05279;
-    background: #d6d6d6;
-
-}
-
-footer{
-
-    padding-top: 75px;
-    margin-bottom: 50px;
-
-}
-
-.leave{
-
-    background: #d6d6d6;
-    color: red;
-    font-size: 20px;
+    flex: 0 0 100%;
+    color: rgb(0, 0, 0, 0);
+    font-size: 1px;
+    background-color: flasher;
+    animation: flasher, barWobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    padding: 30px 30px 30px 15px;
+    margin: 45px 5px 5px 5px;
     border-style: outset;
-    max-width: 200px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: red;
+    border-color: beige;
+    border-radius: 10px;
+    border-width: 25px;
+    text-shadow: 0px 1px 1px rgb(58, 58, 38);
+    box-shadow: 0px 5px 7.5px rgb(58, 58, 38);
+    max-width: 60%; /* MEDIA QUERY THIS */
 
 }
 
-.leave:hover{
-
-    background-color: red;
-    color: #d6d6d6;
-
-}
-
-.theEnd{
-
-    color: #d6d6d6;
-    text-align: center;
-    background: #b05279;
+.bar:hover{
     border-style: inset;
-    border-width: 10px;
-    text-transform: uppercase;
+}
 
+@keyframes barWobble{
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(-0.1deg); }
+    30% { transform: rotate(0.1deg); }
+    45% { transform: rotate(-0.1deg); }
+    60% { transform: rotate(0.1deg); }
+    75% { transform: rotate(-0.1deg); }
+    90% { transform: rotate(0.1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.mainButt{
+    font-family: "roboto", sans-serif;
+    color: rgb(58, 58, 38);
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: beige;
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasher;
+    animation: flasher, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    text-shadow: 0px 1px 1px rgb(58, 58, 38);
+    box-shadow: 0px 5px 7.5px rgb(58, 58, 38);
+}
+
+.mainButt:hover{
+    border-style: inset;
+    color: red;
+}
+
+@keyframes flasher{
+    0% {
+      background-color: beige;
+    }
+  
+    50% {
+      background-color: rgb(218, 218, 193);
+    }
+  
+    100% {
+      background-color: beige;
+    }
+}
+
+.greenButt{
+    font-family: "roboto", sans-serif;
+    color: rgb(61, 77, 34);
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: #abc799;
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: glasherGreen;
+    animation: flasherGreen, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes flasherGreen{
+    0% {
+        background-color: #abc799;
+      }
+    
+      50% {
+        background-color: #90b27c;
+      }
+    
+      100% {
+        background-color: #abc799;
+      }
+}
+
+.greenButt:hover{
+    border-style: inset;
+    color: beige;
+}
+
+.yellowButt{
+    font-family: "roboto", sans-serif;
+    color: #52482d;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: #e7cf8a;
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasherYellow;
+    animation: flasherYellow, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes flasherYellow{
+    0% {
+        background-color: #e7cf8a;
+      }
+    
+      50% {
+        background-color: #d3bb75;
+      }
+    
+      100% {
+        background-color: #e7cf8a;
+      }
+}
+
+.yellowButt:hover{
+    border-style: inset;
+    color: beige;
+}
+
+.blueButt{
+    font-family: "roboto", sans-serif;
+    color: rgb(39, 39, 93);
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: #4b71be;
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasherBlue;
+    animation: flasherBlue, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes flasherBlue{
+    0% {
+        background-color: #4b71be;
+      }
+    
+      50% {
+        background-color: #36589b;
+      }
+    
+      100% {
+        background-color: #4b71be;
+      }
+}
+
+.blueButt:hover{
+    border-style: inset;
+    color: beige;
+}
+
+
+.topButt{
+    font-family: "roboto", sans-serif;
+    color: rgb(32, 32, 21);
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: rgb(184, 184, 167);
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasherTop;
+    text-shadow: 0px 1px 1px rgb(58, 58, 38);
+    box-shadow: 0px 5px 7.5px rgb(58, 58, 38);
+    animation: wobble, flasherTop;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes flasherTop{
+    0% {
+        background-color: rgb(184, 184, 167);
+      }
+    
+      50% {
+        background-color: rgb(149, 149, 136);
+      }
+    
+      100% {
+        background-color: rgb(184, 184, 167);
+      }
+}
+
+.topButt:hover{
+    border-style: inset;
+    color: beige;
+}
+
+.mainButtRed{
+    font-family: "roboto", sans-serif;
+    color: darkred;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: salmon;
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasherRed;
+    animation: flasherRed, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.mainButtRed:hover{
+    border-style: inset;
+    color: beige;
+}
+
+@keyframes flasherRed{
+    0% {
+        background-color: salmon;
+    }
+    
+    50% {
+        background-color: tomato;
+    }
+    
+    100% {
+        background-color: salmon;
+    }
+}
+
+@keyframes wobble{
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(-0.5deg); }
+    30% { transform: rotate(0.5deg); }
+    45% { transform: rotate(-0.5deg); }
+    60% { transform: rotate(0.5deg); }
+    75% { transform: rotate(-0.5deg); }
+    90% { transform: rotate(0.5deg); }
+    100% { transform: rotate(0deg); }
 }
