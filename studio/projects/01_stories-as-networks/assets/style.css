@@ -10,13 +10,26 @@
     font-style: normal;
 }
 
-html{
-    /* background: rgb(217, 217, 201);  */
-    background: #2e2e2e;
+a{
+
+    text-decoration: none;
+
+}
+
+/* a{
+    text-underline-offset: 23px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
 }
 
 a{
     text-decoration: none;
+} */
+
+
+html{
+    /* background: rgb(217, 217, 201);  */
+    background: #2e2e2e;
 }
 
 .buttonBox{
