@@ -81,7 +81,9 @@ html{
     font-weight: bolder;
     font-size: 35px;
     letter-spacing: 3px;
-    color: rgb(119, 109, 90);
+    color: darkred;
+    opacity: .6;
+    /* color: rgb(119, 109, 90); */
     text-shadow: 0px 1px 1px rgb(119, 109, 90);
 }
 
@@ -95,14 +97,14 @@ html{
     animation-iteration-count: infinite;
     animation-duration: 1s;
     padding: 30px 30px 30px 15px;
-    margin: 45px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
     border-style: outset;
     border-color: beige;
     border-radius: 10px;
     border-width: 25px;
     text-shadow: 0px 1px 1px rgb(58, 58, 38);
     box-shadow: 0px 5px 7.5px rgb(58, 58, 38);
-    max-width: 60%; /* MEDIA QUERY THIS */
+    max-width: 40%;
 
 }
 
@@ -350,10 +352,85 @@ html{
     }
 }
 
-.redHov{
-    /* Define styles for the link */
-    text-decoration: none;
+.semiButt{
+    font-family: "roboto", sans-serif;
+    color: rgb(57, 0, 57);
+    font-weight: 500;
+    font-size: 35px;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: rgb(179, 144, 179);
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasherSemi;
+    animation: flasherSemi, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    text-shadow: 0px 1px 1px rgb(58, 58, 38);
+    box-shadow: 0px 5px 7.5px rgb(58, 58, 38);
 }
+
+.semiButt:hover{
+    border-style: inset;
+    color: beige;
+}
+
+@keyframes flasherSemi{
+    0% {
+        background-color: rgb(179, 144, 179);
+    }
+    
+    50% {
+        background-color: rgb(161, 126, 161);
+    }
+    
+    100% {
+        background-color: rgb(179, 144, 179);
+    }
+}
+
+/* .markButt{
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #4b71be;
+    padding: 5px 30px 30px 15px;
+    margin: 5px 5px 5px 5px;
+    border-style: outset;
+    border-color: #e7cf8a;
+    border-radius: 10px;
+    border-width: 25px;
+    background-color: flasherMark;
+    animation: flasherMark, wobble;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation: flasherMark 2s linear infinite alternate;
+    text-shadow: 0px 1px 1px rgb(58, 58, 38);
+    box-shadow: 0px 5px 7.5px rgb(58, 58, 38);  
+}
+
+@keyframes flasherMark{
+    0% {
+        background-color: #e7cf8a;
+    }
+
+    25% {
+        background-color: salmon;
+    }
+    
+    50% {
+        background-color: #4b71be;
+    }
+
+    75% {
+        background-color: salmon;
+    }
+    
+    100% {
+        background-color: #e7cf8a;
+    }
+} */
 
 @keyframes wobble{
     0% { transform: rotate(0deg); }
@@ -365,8 +442,6 @@ html{
     90% { transform: rotate(0.5deg); }
     100% { transform: rotate(0deg); }
 }
-
-
 
 
 /* @media (max-width: 860px){
