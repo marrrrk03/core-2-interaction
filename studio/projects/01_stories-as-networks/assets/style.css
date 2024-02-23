@@ -199,6 +199,11 @@ html{
     color: beige;
 }
 
+.greenButt.hovered{
+    border-style: inset;
+    color: beige;
+  }
+
 .yellowButt{
     font-family: "roboto", sans-serif;
     color: #52482d;
