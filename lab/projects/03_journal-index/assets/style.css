@@ -1,9 +1,26 @@
-html{
-    margin: 35px 100px 0 100px;
+body{
+    margin: 35px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 475px;
 }
 
 .bigBox{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
+.title{
+    font-family: serif;
+    font-size: 35px;
+    color: red;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    margin-bottom: 50px;
+    text-decoration: underline;
 }
 
 .row{
@@ -18,8 +35,8 @@ html{
     border: 1px solid black;
     filter: drop-shadow(0 0 0.75rem crimson);
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: center;
+    width: 275px;
     background-color: blanchedalmond;
 }
 
@@ -31,6 +48,11 @@ html{
 .butt{
     padding: 0px;
     outline: 5px outset red;
+    max-width: fit-content;
+}
+
+.butt:hover{
+    outline: 5px outset blue;
 }
 
 .photo{
@@ -38,7 +60,57 @@ html{
     height: 50px;
 }
 
-.caption{
+/* .caption{
     border: 1px solid black;
     width: fit-content;
+} */
+
+.individualButt{
+    padding: 0px;
+    outline: 5px outset red;
+    max-width: fit-content;
+}
+
+.individualBox{
+    border: 1px solid black;
+    filter: drop-shadow(0 0 0.75rem crimson);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 275px;
+    background-color: blanchedalmond;
+}
+
+.individualPhoto{
+    width: 500px;
+}
+
+.individualCaption{
+    border: 1px solid black;
+    width: fit-content;
+    font-size: 50px;
+    color: blue;
+}
+
+.frame{
+    border: 10px double red;
+    color: blue;
+    font-family: monospace;
+    margin-top: 50px;
+    font-size: 35px;
+    width: 475px;
+    padding: 25px;
+}
+
+.informationBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#information{
+    color: black;
+    text-transform: lowercase;
 }
