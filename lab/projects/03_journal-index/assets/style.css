@@ -2,6 +2,14 @@ body{
     margin: 35px;
 }
 
+.caption a{
+    color: blue;
+}
+
+.title a:visited{
+    color: red;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
