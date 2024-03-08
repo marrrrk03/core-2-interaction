@@ -61,7 +61,7 @@ studentLoanDebt = studentLoanDebt-100;
 console.log("studentLoanDebt: ", studentLoanDebt);
 
 studentLoanDebt = studentLoanDebt+50;
-console.log("studentLoanDebt: ", studentLoanDebt);
+console.log("studentLoanDebt: ", studentLoanDebt); 
 
 
 //ARRAYS

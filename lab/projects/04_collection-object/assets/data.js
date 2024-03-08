@@ -7,6 +7,12 @@ var data=[
         caption:'daytona sand'
     },
     {
+        caption:'racial reckoning'
+    },
+    {
+        caption:'a farewell to arms'
+    },
+    {
         caption:'IV bag'
     },
     {
@@ -56,6 +62,12 @@ var data=[
     },
     {
         caption:'Barbados'
+    },
+    {
+        caption:'conflict metals'
+    },
+    {
+        caption:'arms trade'
     },
     {
         caption:'marx and engels'
