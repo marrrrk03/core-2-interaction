@@ -29,7 +29,7 @@ console.log(randomCaptionIndex, randomCaption);
 // defining insert function with file path parameters
 function insertCaption(caption) {
 	containerElement.innerHTML += `
-		<p>${ caption }.</p>
+		<p>[${ caption }]</p>
 	`
 }
 

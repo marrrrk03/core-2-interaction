@@ -1,12 +1,28 @@
-html{
+html {
   background-color: black;
 }
 
-.treeContainer{
-
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.description{
+a:hover {
+  color: orange;
+  text-decoration: line-through;
+}
+
+.treeContainer {
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: serif;
   font-size: 1.25em;
   text-align: center;
@@ -14,14 +30,24 @@ html{
   background-color: gainsboro; */
   color: white;
   background-color: black;
+  width: max-content;
   margin: 5px, 5px, 7px, 5px;
 }
 
-.description:hover{
-  background-color: blue;
+.projectName{
+  padding: 2px 2px 0px 2px;
 }
 
-.title{
+.description{
+  padding: 2px 2px 0px 2px;
+}
+
+.description:hover{
+  background-color: cyan;
+}
+
+
+/* .title {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -29,20 +55,37 @@ html{
   text-align: center;
   font-weight: bolder;
   font-size: 4em;
-  color: white;
+  color: titleColor;
   -webkit-text-stroke: .03em black;
   line-height: .5;
   letter-spacing: 10px;
   opacity: 90%;
   text-shadow: 0 0 .25em rgba(0,0,0,.6);
+
+  animation: titleGradient ease;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-name: titleGradient;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 
-.tree{
+@keyframes titleGradient {
+  0% {
+    color: cyan;
+  }
+
+  100% {
+    color: orangered;
+  }
+} */
+
+.tree {
   width: 100vw;
   height: 100vh;
 }
 
-p{
+p {
   margin: 0;
   position: absolute;
   top: 87.5%;
@@ -52,7 +95,7 @@ p{
   text-align: center;
   font-family: arial;
   font-weight: 700;
-  font-style: normal;
+  font-style: italic;
   font-size: 3.5em;
   color: white;
   -webkit-text-stroke: .045em black;
