@@ -1,9 +1,9 @@
-// put into conatiner element in html
+// find conatiner element in html
 var containerElement = document.querySelector('.treeContainer');
 
 
 // get random image
-console.log(images);
+// console.log(images);
 var randomImageFloat = Math.random() * images.length; //length of array as limit
 var randomImageIndex = Math.floor(randomImageFloat); //round down
 var randomImage = images[randomImageIndex]; //pull from array
@@ -19,7 +19,7 @@ function insertImage(image) {
 
 
 // get random caption
-console.log(captions);
+// console.log(captions);
 var randomCaptionFloat = Math.random() * captions.length; //length of array as limit
 var randomCaptionIndex = Math.floor(randomCaptionFloat); //round down
 var randomCaption = captions[randomCaptionIndex]; //pull form array
@@ -34,7 +34,6 @@ function insertCaption(caption) {
 }
 
 
-
 // run the functions
 insertImage(randomImage);
 insertCaption(randomCaption);
@@ -44,3 +43,4 @@ insertCaption(randomCaption);
 // 1) run every X seconds with JS setInterval
 // 2) add CSS animation
 // 3) interaction with JS eventListener
+// time, audio, transitions

@@ -1,5 +1,8 @@
-html {
+html, body {
   background-color: black;
+  padding: 0;
+  margin: 0;
+  overflow: hidden
 }
 
 a {
@@ -8,77 +11,95 @@ a {
 }
 
 a:hover {
-  color: orange;
+  color: white;
   text-decoration: line-through;
 }
 
 .treeContainer {
+  opacity: 100%;
 }
 
 .topContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 2.5%;
+  justify-content: space-between;
+  position: fixed;
+  top: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: serif;
   font-size: 1.25em;
   text-align: center;
-  /* color: blue;
-  background-color: gainsboro; */
   color: white;
-  background-color: black;
-  width: max-content;
-  margin: 5px, 5px, 7px, 5px;
+  background: rgba(0,0,0,1);
+  width: 100vw;
+  padding: 10px 5px 0px 5px;
+  /* border: 0.5px solid black; */
+  /* box-shadow: 0px 10px 25px 2.5px rgba(0, 0, 0, 0.3); */
 }
 
-.projectName{
-  padding: 2px 2px 0px 2px;
-}
-
-.description{
-  padding: 2px 2px 0px 2px;
-}
-
-.description:hover{
-  background-color: cyan;
-}
-
-
-/* .title {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-weight: bolder;
-  font-size: 4em;
-  color: titleColor;
-  -webkit-text-stroke: .03em black;
-  line-height: .5;
-  letter-spacing: 10px;
-  opacity: 90%;
-  text-shadow: 0 0 .25em rgba(0,0,0,.6);
-
-  animation: titleGradient ease;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
-  animation-name: titleGradient;
-  animation-iteration-count: infinite;
+.projectName {
+  color: white;
+  background: rgba(0,0,0,0);
+  animation-name: breathe;
   animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes titleGradient {
-  0% {
-    color: cyan;
-  }
+@keyframes breathe {
+  0% {color: white;}
+  50% {color: rgba(255, 255, 255, 0.75);}
+  100% {color: white;} 
+}
 
-  100% {
-    color: orangered;
-  }
-} */
+.description {
+  background: rgba(0,0,0,0);
+  animation-name: breathe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.button {
+  text-align: center;
+  /* position: fixed;
+  top: 2.5%;
+  left: 4%;
+  transform: translate(-50%, -50%); */
+  color: white;
+  background: rgba(0,0,0,0);
+  font-family: serif;
+  font-size: 1em;
+  animation-name: breathe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.button:hover {
+  /* background-color: blue; */
+  color: white;
+  text-decoration: line-through;
+}
+
+#music {
+  text-align: center;
+  /* position: fixed;
+  top: 2.5%;
+  left: 97%;
+  transform: translate(-50%, -50%); */
+  color: white;
+  background: rgba(0,0,0,0);
+  font-family: serif;
+  font-size: 1em;
+  animation-name: breathe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#music:hover {
+  /* background-color: blue; */
+  color: white;
+  text-decoration: line-through;
+}
 
 .tree {
   width: 100vw;
@@ -88,7 +109,7 @@ a:hover {
 p {
   margin: 0;
   position: absolute;
-  top: 87.5%;
+  top: 92.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100vw;
