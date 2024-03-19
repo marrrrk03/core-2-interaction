@@ -1,28 +1,27 @@
 html, body {
   background-color: black;
   padding: 0;
-  margin: 0;
+  margin: 20px;
   overflow: hidden
 }
 
 ::-moz-selection {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: white;
+  background: black;
+}
+
+mark {
+  background-color: white;
 }
 
 a {
   color: white;
   text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  text-decoration: line-through;
 }
 
 .treeContainer {
@@ -40,8 +39,8 @@ a:hover {
   font-family: serif;
   font-size: 1.25em;
   text-align: center;
-  color: white;
-  background: rgba(0,0,0,1);
+  color: black;
+  /* background: rgba(0,0,0,1); */
   width: 100vw;
   padding: 10px 5px 0px 5px;
   /* border: 0.5px solid black; */
@@ -57,9 +56,9 @@ a:hover {
 }
 
 @keyframes breathe {
-  0% {color: white;}
-  50% {color: rgba(255, 255, 255, 0.75);}
-  100% {color: white;} 
+  0% {color: black;}
+  50% {color: rgba(0, 0, 0, 0.5);}
+  100% {color: black;} 
 }
 
 .description {
@@ -87,7 +86,6 @@ a:hover {
 .button:hover {
   /* background-color: blue; */
   color: white;
-  text-decoration: line-through;
 }
 
 #music {
@@ -106,9 +104,12 @@ a:hover {
 }
 
 #music:hover {
+  text-decoration: none;
+}
+
+#music:hover {
   /* background-color: blue; */
   color: white;
-  text-decoration: line-through;
 }
 
 .tree {
@@ -119,7 +120,7 @@ a:hover {
 p {
   margin: 0;
   position: absolute;
-  top: 92.5%;
+  top: 87.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100vw;
@@ -136,11 +137,20 @@ p {
   padding: .15em;
 }
 
+
 @media (max-width: 1300px) {
   .topContainer{
     flex-direction: column;
     top: 5%;
+    text-align: left;
+    justify-content: none;
+    margin-left: 5px;
   }
+
+  #music {
+    text-align: left;
+  }
+
 
   p{
     top: 87.5%;
@@ -150,9 +160,5 @@ p {
 @media (max-width: 745px) {
   .topContainer{
     top: 6%;
-  }
-
-  p{
-    top: 87.5%;
   }
 }

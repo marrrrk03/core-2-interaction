@@ -52,7 +52,8 @@ var captions = [
 	"barbados",
 	"marx and engels",
 	"chasers",
-
+	"icon of the sea",
+	"metaxis",
 	"it balls we rain",
 	"agent orange",
 	"burning man",
@@ -126,6 +127,7 @@ var captions = [
 	"harvest",
 	"birthright",
 	"taste of my orient",
+	"he confused me with his black son",
 	"inherent pain in the nostalgia of things",
 	"guardian angel",
 	"trench foot",
