@@ -25,6 +25,7 @@ a {
 }
 
 .topContainer {
+  margin: 0 5px 0 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -115,7 +116,7 @@ a {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 0 5px;
   position: absolute;
   top: 87.5%;
   left: 50%;
@@ -139,20 +140,16 @@ p {
   color: yellow;
 }
 
-@media (max-width: 1300px) {
-  .topContainer{
-    flex-direction: column;
-    justify-content: none;
-    margin-left: 5px;
 
-  }
-
-  #music {
-    text-align: left;
-  }
-
-
+@media (max-width: 1250px) {
   p{
-    top: 87.5%;
+    font-size: 2.75em;
   }
 }
+
+@media (max-width: 750px) {
+  p{
+    font-size: 2.25em;
+  }
+}
+
