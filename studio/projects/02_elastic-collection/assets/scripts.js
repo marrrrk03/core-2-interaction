@@ -104,6 +104,7 @@ function insertImage(image) {
 	containerElement.innerHTML += `
 		<img src="/studio/projects/02_elastic-collection/assets/media/${ image }" class="tree">
 	`;
+
 }
 
 
