@@ -1,6 +1,3 @@
-
-
-
 // find conatiner element in html
 var containerElement = document.querySelector('.treeContainer');
 
