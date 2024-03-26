@@ -43,7 +43,6 @@ function shuffleArray(array) {			//to randomize array
     return array;
 }
 
-
 // shuffle the captions array
 shuffleArray(captions);
 
@@ -55,7 +54,7 @@ let currentIndex = 0;
 // get the next caption
 function getNextCaption() {
     const nextCaption = captions[currentIndex];
-    currentIndex = (currentIndex + 1) % captions.length; // Move to the next caption or loop back to the beginning
+    currentIndex = (currentIndex + 1) % captions.length; // move to the next caption or restart
     return nextCaption;
 }
 
@@ -75,7 +74,7 @@ insertCaption(getNextCaption());
 // calling function to happen at interval
 setInterval(function() {
     insertCaption(getNextCaption());
-}, 6000);
+}, 4500);
 
 // // calling insertCaption to start with a random
 // insertCaption(getRandomCaption());
@@ -102,7 +101,8 @@ function getRandomImageIndex() {
 // defining insert function with image
 function insertImage(image) {
 	containerElement.innerHTML += `
-		<img src="/studio/projects/02_elastic-collection/assets/media/${ image }" class="tree">
+		<img src="/studio/projects/02_elastic-collection/assets/media/${ image }" 
+        class="tree" alt="this is a tree">
 	`;
 
 }
@@ -115,11 +115,13 @@ function updateImage() {
     insertImage(randomImage);
 }
 
+
 // initial image update
 updateImage();
 
+
 // calling insertImage to happen at interval
-setInterval(updateImage, 6000); 
+setInterval(updateImage, 4500); 
 
 
 // run the functions

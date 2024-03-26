@@ -1,10 +1,11 @@
 html, body {
   background-color: grey;
+  /* background-image: url(); */
   padding: 0;
   margin: 0;
   overflow: hidden;
-  cursor: -webkit-grab; 
-  cursor: grab;
+  /* cursor: -webkit-grab; 
+  cursor: grab; */
 }
 
 ::-moz-selection {
@@ -151,7 +152,7 @@ p {
 
 .about {
   margin: .1em;
-  margin-top: .1em;
+  margin-top: 3.5em;
   position: absolute;
   top: 12.5%;
   left: 50%;
@@ -199,6 +200,12 @@ p {
     font-size: 2.75em;
   }
 }
+
+/* @media (max-width: 1450px) {
+  .about {
+    margin-top: 3em;
+  }
+} */
 
 @media (max-width: 750px) {
   p {
