@@ -74,7 +74,7 @@ insertCaption(getNextCaption());
 // calling function to happen at interval
 setInterval(function() {
     insertCaption(getNextCaption());
-}, 4500);
+}, 6000);
 
 // // calling insertCaption to start with a random
 // insertCaption(getRandomCaption());
@@ -121,7 +121,7 @@ updateImage();
 
 
 // calling insertImage to happen at interval
-setInterval(updateImage, 4500); 
+setInterval(updateImage, 6000); 
 
 
 // run the functions
