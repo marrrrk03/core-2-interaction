@@ -4,8 +4,8 @@ html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  /* cursor: -webkit-grab; 
-  cursor: grab; */
+  cursor: -webkit-help; 
+  cursor: help;
 }
 
 ::-moz-selection {
@@ -19,7 +19,7 @@ html, body {
 }
 
 mark {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 a {
@@ -51,10 +51,14 @@ a {
   color: yellow;
   background: rgba(0,0,0,0);
   text-align: left;
+  font-family: 'Arial Narrow', Arial, sans-serif;
   font-size: 1.3em;
   font-weight: bolder;
   -webkit-text-stroke: .035em black;
   animation: breathe 1.5s step-end infinite;
+  text-shadow: 0 0 .2em rgba(0,0,0,.5);
+
+  /* background: rgba(0,0,0,.35); */
 }
 
 @keyframes breathe {
@@ -91,18 +95,9 @@ a {
 }
 
 #music {
-  text-align: center;
-  /* position: fixed;
-  top: 2.5%;
-  left: 97%;
-  transform: translate(-50%, -50%); */
-  color: white;
+  color: rgba(255, 255, 255, 0);
   background: rgba(0,0,0,0);
-  font-family: serif;
   font-size: 1em;
-  animation-name: breathe;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
 }
 
 #music:hover {

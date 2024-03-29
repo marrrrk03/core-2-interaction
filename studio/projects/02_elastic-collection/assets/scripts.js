@@ -1,3 +1,7 @@
+document.addEventListener("click", function() {
+    document.getElementById('music').play();
+});
+
 // find conatiner element in html
 var containerElement = document.querySelector('.treeContainer');
 
@@ -125,8 +129,11 @@ setInterval(updateImage, 6000);
 
 
 // run the functions
-insertCaption(randomCaption);
+// insertCaption(randomCaption);
 insertImage(randomImage);
+
+  
+
 
 // things to do:
 // 1) run every X seconds with JS setInterval
