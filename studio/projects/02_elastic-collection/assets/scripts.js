@@ -1,42 +1,21 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the full-viewport div
+    var cover = document.getElementById("cover");
+
+    // Add event listener for click event
+    cover.addEventListener("click", function() {
+        // Hide the full-viewport div
+        cover.style.display = "none";
+    });
+});
+
+//tap to play audio
 document.addEventListener("click", function() {
     document.getElementById('music').play();
 });
 
 // find conatiner element in html
 var containerElement = document.querySelector('.treeContainer');
-
-
-// test1 get random caption
-// console.log(captions);
-// var randomCaptionFloat = Math.random() * captions.length; //length of array as limit
-// var randomCaptionIndex = Math.floor(randomCaptionFloat); //round down
-// var randomCaption = captions[randomCaptionIndex]; //pull form array
-// console.log(randomCaptionIndex, randomCaption);
-
-
-// // defining insert function with file path parameters
-// function insertCaption(caption) {
-// 	containerElement.innerHTML = `
-// 		<p><span class="brackets">[</span>${ caption }<span class="brackets">]</span></p>
-// 	`
-// }
-
-
-
-// console.log(captions);
-
-// function getRandomCaption() {
-//     const randomIndex = Math.floor(Math.random() * captions.length);
-//     return captions[randomIndex];
-// }
-
-
-// // defining function with caption
-// function insertCaption(caption) {
-//     containerElement.innerHTML = `
-//         <p><span class="brackets">[</span>${caption}<span class="brackets">]</span></p>
-//     `;
-// }
 
 
 function shuffleArray(array) {			//to randomize array
@@ -55,87 +34,24 @@ shuffleArray(captions);
 let currentIndex = 0;
 
 
-// get the next caption
-function getNextCaption() {
-    const nextCaption = captions[currentIndex];
-    currentIndex = (currentIndex + 1) % captions.length; // move to the next caption or restart
-    return nextCaption;
-}
-
-
-// insert caption into html element
-function insertCaption(caption) {
-    containerElement.innerHTML = `
-        <p><span class="brackets">[</span>${caption}<span class="brackets">]</span></p>
-    `;
+function insertTreeSlide() {
+	const nextCaption = captions[currentIndex];
+	currentIndex = (currentIndex + 1) % captions.length; // move to the next caption or restart
+	const randomImageIndex = Math.floor(Math.random() * images.length);
+    const randomImage = images[randomImageIndex];
+	const slide = document.createElement('div');
+	slide.classList.add('treeSlide');
+	slide.innerHTML = `
+		<img src="assets/media/${ randomImage }" class="tree" alt="this is a tree">
+		<p><span class="brackets">[</span>${ nextCaption }<span class="brackets">]</span></p>
+=	`;
+    containerElement.appendChild(slide);
 }
 
 
 // initial insertion
-insertCaption(getNextCaption());
+insertTreeSlide();
 
 
 // calling function to happen at interval
-setInterval(function() {
-    insertCaption(getNextCaption());
-}, 6000);
-
-// // calling insertCaption to start with a random
-// insertCaption(getRandomCaption());
-
-
-// // calling insertCaption to happen at interval
-// setInterval(function() {
-//     insertCaption(getRandomCaption());
-// }, 5000);
-
-
-// get random image
-console.log(images);
-var randomImageFloat = Math.random() * images.length; //length of array as limit
-var randomImageIndex = Math.floor(randomImageFloat); //round down
-var randomImage = images[randomImageIndex]; //pull from array
-console.log(randomImageIndex, randomImage);
-
-
-function getRandomImageIndex() {
-    return Math.floor(Math.random() * images.length);
-}
-
-// defining insert function with image
-function insertImage(image) {
-	containerElement.innerHTML += `
-		<img src="/studio/projects/02_elastic-collection/assets/media/${ image }" 
-        class="tree" alt="this is a tree">
-	`;
-
-}
-
-
-// function to update image
-function updateImage() {
-    const randomImageIndex = getRandomImageIndex();
-    const randomImage = images[randomImageIndex];
-    insertImage(randomImage);
-}
-
-
-// initial image update
-updateImage();
-
-
-// calling insertImage to happen at interval
-setInterval(updateImage, 6000); 
-
-
-// run the functions
-// insertCaption(randomCaption);
-insertImage(randomImage);
-
-  
-
-
-// things to do:
-// 1) run every X seconds with JS setInterval
-// 2) add CSS animation
-// 3) interaction with JS eventListener
+setInterval(insertTreeSlide, 7500);
