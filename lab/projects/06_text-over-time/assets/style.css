@@ -1,0 +1,31 @@
+html {
+    margin: 10% 15% 15% 15%;
+    background-color: black;
+}
+
+.top {
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 15%;
+}
+
+.contents {
+    color: paleturquoise;
+    -webkit-text-stroke-color: paleturquoise;
+}
+
+.title {
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+p {
+    text-indent: 50px;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: normal;
+}
