@@ -1,0 +1,11 @@
+html {
+    background-color: lightgrey;
+}
+
+p {
+    font-size: 1.75em;
+}
+
+.bold {
+    font-weight: bold;
+}
