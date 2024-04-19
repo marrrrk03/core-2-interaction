@@ -1,11 +1,63 @@
 html {
-    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    background-image: url(http://108.41.24.124:80/mjpg/video.mjpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: red;
 }
 
-p {
-    font-size: 1.75em;
+body{
+    /* background-image: url(http://108.41.24.124:80/mjpg/video.mjpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
-.bold {
-    font-weight: bold;
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.liveCam {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    opacity: 75%;
+}
+
+.description {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 25px;
+    color: #00FF00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 650;
+    text-align: center;
+    width: 90vw;
+    -webkit-text-stroke: .025em black;
+    text-stroke: .025em black;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.feet {
+    background-color: rgba(255, 0, 0, 0.75);
+    margin: 0;
+    position: fixed;
+    width: 100vw;
+    top: 94.5%;
+    left: 0%;
+    color: #00FF00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 650;
+    -webkit-text-stroke: .025em black;
+    text-stroke: .025em black;
 }
