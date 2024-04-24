@@ -1,0 +1,40 @@
+html {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin: 50px;
+    cursor: crosshair;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.title {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: .9;
+    text-shadow: blue 1px 0 15px;
+}
+
+img {
+    height: 150px;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.subheads {
+    font-weight: bold;
+}
+
+.index {
+    margin-right: 50px;
+}
+
+.studioProjects, .studioWorkshops, .labProjects, .labWorkshops {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    line-height: 1.25;
+}

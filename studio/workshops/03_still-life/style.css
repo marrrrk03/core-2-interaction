@@ -14,9 +14,16 @@ body {
 .frame {
   width: 95vw;
   height: 57vw;
-  background: white;
+  background: tomato;
   margin: 2.5vw auto;
   position: relative;
 }
 
 /* Your CSS goes here */
+
+p {
+  font-family: sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: blue;
+}
