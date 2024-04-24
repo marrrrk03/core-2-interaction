@@ -11,13 +11,39 @@ a {
     text-decoration: none;
 }
 
-.title {
+.topBox {
     color: blue;
     font-weight: bold;
     font-size: 1.5em;
     line-height: .9;
     text-shadow: blue 1px 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactThings {
+    font-size: 25px;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+.contact {
+    font-size: 25px;
+    font-weight: normal;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+#russia {
+    width: 500px;
+    height: auto;
+    border: black 3px inset;
+}
+
+hr {
     margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 img {
@@ -72,6 +98,12 @@ img {
 }
 
 @media (max-width: 950px) {
+
+    .topBox {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 50px;
+    }
 
     .studioProjects, .studioWorkshops, .labProjects, .labWorkshops {
         flex-direction: column;
