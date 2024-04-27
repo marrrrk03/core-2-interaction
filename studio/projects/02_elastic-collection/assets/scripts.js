@@ -50,4 +50,4 @@ function insertTreeSlide() {
 insertTreeSlide();
 
 // calling function to happen at interval
-setInterval(insertTreeSlide, 1500);
+setInterval(insertTreeSlide, 2500);
