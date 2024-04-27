@@ -5,6 +5,7 @@ html {
     padding-bottom: 50px;
     cursor: crosshair;
     background-color: whitesmoke;
+    color: blue;
 }
 
 a {
@@ -13,7 +14,6 @@ a {
 }
 
 .topBox {
-    color: blue;
     font-weight: bold;
     font-size: 1.5em;
     line-height: .9;

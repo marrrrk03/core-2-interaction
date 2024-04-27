@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7000OaksNYC</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7000OaksNYC</title>
 
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="description">
-        “7000 OAKS”
-        <br>
-        <span class="magenta">a Joseph Beuys project</span>
-        <br>
-        <br>
-        a Dia Chelsea acquisition<br>
-        <span class="moreInfo">
-            ⚑ West 22nd Street between<br>
-            10th and 11th Avenues, NY<br>
-        </span>
-        <span class="magenta">
-            open year around<br>
-            admission is free<br>
-        </span>
-        <div id="temperature"></div>
-        <div id="humidity"></div>
-        <div id="time"></div>
-        <span class="moreInfo">➤ more info</span>
-    </div>
+        <link rel="stylesheet" href="assets/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="description">
+            “7000 OAKS”
+            <br />
+            <span class="magenta">a Joseph Beuys project</span>
+            <br />
+            <br />
+            a Dia Chelsea acquisition<br />
+            <span class="moreInfo">
+                West 22nd Street between<br />
+                10th and 11th Avenues, NY<br />
+            </span>
+            <span class="magenta">
+                open year around<br />
+                admission is free<br />
+            </span>
+            <div id="temperature"></div>
+            <div id="humidity"></div>
+            <div id="time"></div>
 
-    <!-- <marquee behavior="scroll" direction="right" loop="-1" class="feet"></marquee> -->
+            <details class="moreInfo">
+                <summary>more info</summary>
+                <div style="color: #00ff00">
+                    Beuy's project
+                    <span style="color: magenta">7000 Oaks</span> began at
+                    Documenta 7, 1982 in Kassel Germany. The work in Germany
+                    consists of 7000 oaks each paired with a columnar basalt
+                    stone. In 1988, under the support of Dia, the project
+                    expanded to
+                    <span style="color: magenta">thirty seven</span> tree+rock
+                    pairings in Manhattan New York.
+                    <details class="moreInfo">
+                        <summary>here for Dia Chelsea website</summary>
+                        <a
+                            href="https://www.diaart.org/visit/visit-our-locations-sites/joseph-beuys-7000-oaks"
+                            style="color: magenta"
+                            >Dia:Chelsea</a
+                        >
+                    </details>
+                </div>
+            </details>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/rocks.js"></script>
-    <script src="assets/scripts.js"></script>
-</body>
+        <!-- <marquee behavior="scroll" direction="right" loop="-1" class="feet"></marquee> -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/rocks.js"></script>
+        <script src="assets/scripts.js"></script>
+    </body>
 </html>

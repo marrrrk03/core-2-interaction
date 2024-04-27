@@ -7,7 +7,7 @@ html {
     background-color: black;
 }
 
-body{
+body {
     /* background-image: url(http://108.41.24.124:80/mjpg/video.mjpg);
     background-size: cover;
     background-repeat: no-repeat; */
@@ -18,13 +18,17 @@ a {
     text-decoration: none;
 }
 
+img {
+    filter: blur(50);
+}
+
 .liveCam {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100vw;
-    opacity: 75%;
+    opacity: 0.5%;
 }
 
 .description {
@@ -32,15 +36,17 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    margin: 10% 25px 25px 25px;
-    color: #00FF00;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5% 25px 25px 25px;
+    color: #00ff00;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
     font-weight: 650;
     text-align: center;
     width: 90vw;
-    -webkit-text-stroke: .025em black;
-    text-stroke: .025em black;
+    -webkit-text-stroke: 0.025em black;
+    text-stroke: 0.025em black;
+    filter: blur(0.5px);
+    opacity: 95%;
 }
 
 .magenta {
@@ -48,12 +54,19 @@ a {
 }
 
 .moreInfo {
+    text-align: center;
     z-index: 999;
     color: cyan;
+    filter: blur(0.5px);
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* .feet {
-    background-color: rgba(255, 0, 0, 0.75);
+    background-color: rgba(255, 0, 0, 0.5);
     margin: 0;
     position: absolute;
     width: 100vw;
@@ -72,18 +85,21 @@ a {
     position: absolute;
     width: fit-content;
     padding: 10px;
-    width: 7.5%;
+    width: 100px;
+    filter: blur(1px);
 }
 
-#temperature, #humidity {
-    color: #00FF00;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#temperature,
+#humidity {
+    color: #00ff00;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: 650;
     text-align: center;
     width: 90vw;
-    -webkit-text-stroke: .025em black;
-    text-stroke: .025em black;
+    -webkit-text-stroke: 0.025em black;
+    text-stroke: 0.025em black;
+    filter: blur(0.5px);
 }
 
 .values {

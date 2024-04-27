@@ -1,24 +1,14 @@
 var dateObject = new Date();
 var URL = `https://api.open-meteo.com/v1/forecast?latitude=40.7143&longitude=-74.006&current=temperature_2m,relative_humidity_2m&timezone=America%2FNew_York`;
 
-// getting api info function
-getTemperature();
-
-setInterval(getTemperature, 60000);
-
 function getTemperature() {
   fetch(URL)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
-
       var currentTemp = data.current.temperature_2m;
       var currentHumidity = data.current.relative_humidity_2m;
-
-      console.log(currentTemp);
-      console.log(currentHumidity);
 
       document.getElementById("temperature").innerHTML =
         "the current temperature is: " +
@@ -29,9 +19,12 @@ function getTemperature() {
 
       setTimeout(function () {
         makeDiv(currentHumidity);
-      }, calculateDelay(currentHumidity));
+      }, calculateDelay(1000));
     });
 }
+
+// getting api info function
+getTemperature();
 
 // function calculateDelay(humidity) {
 //     // The maximum delay we want is 5000 ms
@@ -41,18 +34,43 @@ function getTemperature() {
 //     return delay;
 // }
 
+function makeDiv(currentHumidity) {
+  console.log(calculateDelay(currentHumidity));
+  console.log(currentHumidity);
+
+  var numRand = Math.floor(Math.random() * 501);
+  var divsize = 100;
+  var posx = Math.random() * (window.innerWidth - divsize);
+  var posy = Math.random() * (window.innerHeight - divsize);
+
+  var randomIndex = Math.floor(Math.random() * rocks.length);
+  var rock = rocks[randomIndex];
+
+  var imgElement = document.createElement("img");
+  imgElement.src = "assets/rockPNGs/" + rock;
+  imgElement.classList.add("tree");
+  imgElement.style.left = posx + "px";
+  imgElement.style.top = posy + "px";
+
+  document.body.appendChild(imgElement);
+
+  setTimeout(function () {
+    makeDiv(currentHumidity);
+  }, calculateDelay(currentHumidity));
+}
+
 function calculateDelay(humidity) {
   var humidityDelays = {
-    "0-10": 10000,
-    "11-20": 9000,
-    "21-30": 8000,
-    "31-40": 7000,
-    "41-50": 6000,
-    "51-60": 5000,
-    "61-70": 4000,
-    "71-80": 3000,
-    "81-90": 2000,
-    "91-100": 1000,
+    "0-10": 3500,
+    "11-20": 3000,
+    "21-30": 2750,
+    "31-40": 2500,
+    "41-50": 1500,
+    "51-60": 1000,
+    "61-70": 950,
+    "71-80": 700,
+    "81-90": 450,
+    "91-100": 200,
   };
 
   if (humidity >= 0 && humidity <= 10) {
@@ -77,34 +95,3 @@ function calculateDelay(humidity) {
     return humidityDelays["91-100"];
   }
 }
-
-$(document).ready(function () {
-  function makeDiv(currentHumidity) {
-    var numRand = Math.floor(Math.random() * 501);
-    var divsize = 100;
-    var posx = Math.random() * ($(window).width() - divsize);
-    var posy = Math.random() * ($(window).height() - divsize);
-
-    var randomIndex = Math.floor(Math.random() * rocks.length);
-    var rock = rocks[randomIndex];
-
-    var $newdiv = $(
-      "<img src='assets/rockPNGs/" + rock + "' class='tree'></div>"
-    ).css({
-      left: posx + "px",
-      top: posy + "px",
-      filter: "blur(1px)",
-    });
-
-    $newdiv
-      .appendTo("body")
-      .delay(calculateDelay(currentHumidity))
-      .fadeIn(0, function () {
-        makeDiv(currentHumidity);
-      });
-  }
-
-  setTimeout(function () {
-    makeDiv();
-  }, 3000);
-});
