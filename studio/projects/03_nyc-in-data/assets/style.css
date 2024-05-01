@@ -5,6 +5,7 @@ html {
     background-size: cover;
     background-repeat: repeat;
     background-color: black;
+    cursor: grab;
 }
 
 body {
@@ -65,6 +66,18 @@ img {
     align-items: center;
 }
 
+.expander {
+    font-size: 30px;
+    -webkit-text-stroke: 0.03em black;
+    text-stroke: 0.03em black;
+    margin: auto;
+    width: 55%;
+}
+
+.expander:hover {
+    cursor: pointer;
+}
+
 /* .feet {
     background-color: rgba(255, 0, 0, 0.5);
     margin: 0;
@@ -86,7 +99,7 @@ img {
     width: fit-content;
     padding: 2.5px;
     width: 100px;
-    filter: blur(1px);
+    filter: blur(0.65px);
 }
 
 #temperature,

@@ -49,8 +49,11 @@ function makeDiv(currentHumidity) {
     var imgElement = document.createElement("img");
     imgElement.src = "assets/rockPNGs/" + rock;
     imgElement.classList.add("tree");
+    imgElement.style.position = "absolute";
     imgElement.style.left = posx + "px";
     imgElement.style.top = posy + "px";
+
+    $(imgElement).draggable();
 
     document.body.appendChild(imgElement);
 
